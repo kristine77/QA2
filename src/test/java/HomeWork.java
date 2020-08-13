@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import static java.awt.geom.Point2D.distance;
-
 public class HomeWork {
 
     @Test
@@ -69,10 +67,10 @@ public class HomeWork {
             lon2 = Math.toRadians(lon2);
 
             double earthRadius = 6371.01; //Kilometers
-            int distBetweenPoints = (int) (earthRadius * Math.acos(Math.sin(lat1)
+            return (int) (earthRadius * Math.acos(Math.sin(lat1)
                     * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)));
 
-            return distBetweenPoints;
+//            return distBetweenPoints;
         }
 
     }
